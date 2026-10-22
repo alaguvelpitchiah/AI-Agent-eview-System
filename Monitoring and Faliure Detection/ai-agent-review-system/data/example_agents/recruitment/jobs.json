@@ -1,0 +1,10 @@
+[
+  {"id": "J001", "title": "Backend Python Developer", "required_skills": ["python", "sql", "rest api"], "preferred_skills": ["docker", "aws"], "min_years": 2, "min_education": "bachelor"},
+  {"id": "J002", "title": "Data Scientist", "required_skills": ["python", "machine learning", "statistics", "sql"], "preferred_skills": ["deep learning"], "min_years": 3, "min_education": "master"},
+  {"id": "J003", "title": "Frontend React Developer", "required_skills": ["javascript", "react", "html", "css"], "preferred_skills": ["typescript"], "min_years": 2, "min_education": "bachelor"},
+  {"id": "J004", "title": "DevOps Engineer", "required_skills": ["linux", "docker", "kubernetes", "ci/cd"], "preferred_skills": ["aws", "terraform"], "min_years": 3, "min_education": "bachelor"},
+  {"id": "J005", "title": "Java Backend Engineer", "required_skills": ["java", "spring", "sql", "rest api"], "preferred_skills": ["microservices"], "min_years": 3, "min_education": "bachelor"},
+  {"id": "J006", "title": "Data Analyst", "required_skills": ["sql", "excel", "data visualization"], "preferred_skills": ["python", "power bi"], "min_years": 1, "min_education": "bachelor"},
+  {"id": "J007", "title": "Machine Learning Engineer", "required_skills": ["python", "machine learning", "deep learning", "docker"], "preferred_skills": ["aws"], "min_years": 3, "min_education": "bachelor"},
+  {"id": "J008", "title": "QA Automation Engineer", "required_skills": ["selenium", "testing", "ci/cd"], "preferred_skills": ["python", "java"], "min_years": 2, "min_education": "diploma"}
+]

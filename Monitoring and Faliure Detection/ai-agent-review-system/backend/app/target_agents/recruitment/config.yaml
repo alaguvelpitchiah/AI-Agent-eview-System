@@ -1,0 +1,57 @@
+# Versioned configuration of the recruitment agent.
+# Every key below can be overridden per run (config_overrides), which is how
+# later phases inject faults and test repairs without touching this file.
+version: "1.0.0"
+
+education_levels:
+  none: 0
+  diploma: 1
+  bachelor: 2
+  master: 3
+  phd: 4
+
+parser:
+  disabled_skills: []        # skills the parser must ignore (fault-injection hook)
+
+skills:                      # canonical skill -> accepted spellings
+  python: [python, python3]
+  sql: [sql, mysql, postgresql, postgres]
+  rest api: [rest api, rest apis, restful, restful api]
+  docker: [docker]
+  aws: [aws, amazon web services]
+  machine learning: [machine learning, ml]
+  statistics: [statistics, statistical analysis]
+  deep learning: [deep learning, neural networks]
+  javascript: [javascript, js]
+  react: [react, reactjs, react.js]
+  html: [html, html5]
+  css: [css, css3]
+  typescript: [typescript]
+  linux: [linux, ubuntu]
+  kubernetes: [kubernetes, k8s]
+  ci/cd: [ci/cd, cicd, continuous integration]
+  terraform: [terraform]
+  java: [java]
+  spring: [spring, spring boot]
+  microservices: [microservices, microservice]
+  excel: [excel, ms excel]
+  data visualization: [data visualization, data visualisation, tableau]
+  power bi: [power bi, powerbi]
+  selenium: [selenium]
+  testing: [testing, test automation, unit testing]
+
+retrieval:
+  skill_weight: 0.7          # weight of skill overlap in the retrieval score
+  title_weight: 0.3          # weight of headline/title similarity
+  top_k: 3                   # jobs passed on to ranking
+  min_score: 0.15            # jobs scoring below this are not retrieved
+
+ranking:
+  weights:                   # should sum to 1.0
+    required_skills: 0.50
+    preferred_skills: 0.15
+    experience: 0.20
+    education: 0.15
+  enforce_experience_filter: true   # below min experience -> score capped
+  enforce_education_filter: true    # below min education  -> score capped
+  qualification_cap: 40.0

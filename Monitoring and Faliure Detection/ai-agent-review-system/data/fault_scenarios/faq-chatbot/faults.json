@@ -1,0 +1,49 @@
+{
+  "agent_id": "faq-chatbot",
+  "faults": [
+    {
+      "fault_id": "FAQ-F01",
+      "name": "Answer threshold too high",
+      "description": "Correct FAQ entries are found but never used",
+      "component": "response_generation",
+      "overrides": {
+        "config_overrides": {
+          "response.answer_threshold": 0.99
+        }
+      }
+    },
+    {
+      "fault_id": "FAQ-F02",
+      "name": "Retrieval returns nothing",
+      "description": "top_k is zero",
+      "component": "retrieval",
+      "overrides": {
+        "config_overrides": {
+          "retrieval.top_k": 0
+        }
+      }
+    },
+    {
+      "fault_id": "FAQ-F03",
+      "name": "Everything is a greeting",
+      "description": "Intent detection is stuck on greeting",
+      "component": "intent_detection",
+      "overrides": {
+        "stage_overrides": {
+          "intent_detection": "greeting"
+        }
+      }
+    },
+    {
+      "fault_id": "FAQ-F04",
+      "name": "Retrieval cut-off too strict",
+      "description": "min_score rejects good matches",
+      "component": "retrieval",
+      "overrides": {
+        "config_overrides": {
+          "retrieval.min_score": 0.95
+        }
+      }
+    }
+  ]
+}

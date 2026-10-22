@@ -1,0 +1,332 @@
+{
+  "agent_id": "recruitment-agent",
+  "description": "Synthetic resumes with manually verified expected matches.",
+  "cases": [
+    {
+      "case_id": "C001",
+      "input": {
+        "resume_text": "Backend Python Developer\nAlice Rao | synthetic candidate\n\nSUMMARY\nBackend developer with 4 years of experience building REST APIs and data services.\n\nSKILLS\nPython, SQL, REST API, Docker, AWS\n\nEDUCATION\nBachelor of Engineering in Computer Science",
+        "target_job_id": "J001"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "top_recommendation.job_id",
+            "op": "equals",
+            "value": "J001"
+          },
+          {
+            "path": "match_score",
+            "op": "gte",
+            "value": 90
+          },
+          {
+            "path": "candidate_profile.skills",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "qualified"
+      ]
+    },
+    {
+      "case_id": "C002",
+      "input": {
+        "resume_text": "Data Scientist\nBob Nair | synthetic candidate\n\nSUMMARY\nData scientist with 5 years of experience in predictive modelling.\n\nSKILLS\nPython, Machine Learning, Statistics, SQL, Deep Learning\n\nEDUCATION\nMaster of Science in Statistics",
+        "target_job_id": "J002"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "top_recommendation.job_id",
+            "op": "equals",
+            "value": "J002"
+          },
+          {
+            "path": "match_score",
+            "op": "gte",
+            "value": 90
+          },
+          {
+            "path": "candidate_profile.skills",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "qualified"
+      ]
+    },
+    {
+      "case_id": "C003",
+      "input": {
+        "resume_text": "Frontend React Developer\nCarol Das | synthetic candidate\n\nSUMMARY\nFrontend developer with 3 years of experience building web interfaces.\n\nSKILLS\nJavaScript, React, HTML, CSS, TypeScript\n\nEDUCATION\nBachelor of Technology in Information Technology",
+        "target_job_id": "J003"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "top_recommendation.job_id",
+            "op": "equals",
+            "value": "J003"
+          },
+          {
+            "path": "match_score",
+            "op": "gte",
+            "value": 90
+          },
+          {
+            "path": "candidate_profile.skills",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "qualified"
+      ]
+    },
+    {
+      "case_id": "C004",
+      "input": {
+        "resume_text": "DevOps Engineer\nDave Iyer | synthetic candidate\n\nSUMMARY\nDevOps engineer with 6 years of experience automating delivery pipelines.\n\nSKILLS\nLinux, Docker, Kubernetes, CI/CD, AWS, Terraform\n\nEDUCATION\nBachelor of Engineering in Electronics",
+        "target_job_id": "J004"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "top_recommendation.job_id",
+            "op": "equals",
+            "value": "J004"
+          },
+          {
+            "path": "match_score",
+            "op": "gte",
+            "value": 90
+          },
+          {
+            "path": "candidate_profile.skills",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "qualified"
+      ]
+    },
+    {
+      "case_id": "C005",
+      "input": {
+        "resume_text": "Java Backend Engineer\nErin Paul | synthetic candidate\n\nSUMMARY\nJava engineer with 5 years of experience designing service backends.\n\nSKILLS\nJava, Spring Boot, SQL, REST API, Microservices\n\nEDUCATION\nBachelor of Science in Computer Science",
+        "target_job_id": "J005"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "top_recommendation.job_id",
+            "op": "equals",
+            "value": "J005"
+          },
+          {
+            "path": "match_score",
+            "op": "gte",
+            "value": 90
+          },
+          {
+            "path": "candidate_profile.skills",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "qualified"
+      ]
+    },
+    {
+      "case_id": "C006",
+      "input": {
+        "resume_text": "Data Analyst\nFrank Joseph | synthetic candidate\n\nSUMMARY\nAnalyst with 2 years of experience turning data into dashboards.\n\nSKILLS\nSQL, Excel, Data Visualization, Power BI, Python\n\nEDUCATION\nBachelor of Commerce",
+        "target_job_id": "J006"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "top_recommendation.job_id",
+            "op": "equals",
+            "value": "J006"
+          },
+          {
+            "path": "match_score",
+            "op": "gte",
+            "value": 90
+          },
+          {
+            "path": "candidate_profile.skills",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "qualified"
+      ]
+    },
+    {
+      "case_id": "C007",
+      "input": {
+        "resume_text": "Machine Learning Engineer\nGrace Menon | synthetic candidate\n\nSUMMARY\nML engineer with 4 years of experience deploying models to production.\n\nSKILLS\nPython, Machine Learning, Deep Learning, Docker, AWS\n\nEDUCATION\nBachelor of Technology in Computer Science",
+        "target_job_id": "J007"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "top_recommendation.job_id",
+            "op": "equals",
+            "value": "J007"
+          },
+          {
+            "path": "match_score",
+            "op": "gte",
+            "value": 90
+          },
+          {
+            "path": "candidate_profile.skills",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "qualified"
+      ]
+    },
+    {
+      "case_id": "C008",
+      "input": {
+        "resume_text": "QA Automation Engineer\nHenry Raj | synthetic candidate\n\nSUMMARY\nTest engineer with 3 years of experience automating regression suites.\n\nSKILLS\nSelenium, Testing, CI/CD, Python\n\nEDUCATION\nDiploma in Computer Engineering",
+        "target_job_id": "J008"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "top_recommendation.job_id",
+            "op": "equals",
+            "value": "J008"
+          },
+          {
+            "path": "match_score",
+            "op": "gte",
+            "value": 90
+          },
+          {
+            "path": "candidate_profile.skills",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "qualified"
+      ]
+    },
+    {
+      "case_id": "C009",
+      "input": {
+        "resume_text": "Junior Backend Developer\nIrene Thomas | synthetic candidate\n\nSUMMARY\nEarly-career developer with 1 year of experience building small APIs.\n\nSKILLS\nPython, SQL, REST API\n\nEDUCATION\nBachelor of Engineering in Computer Science",
+        "target_job_id": "J001"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "top_recommendation.job_id",
+            "op": "equals",
+            "value": "J001"
+          },
+          {
+            "path": "match_score",
+            "op": "lte",
+            "value": 40
+          },
+          {
+            "path": "candidate_profile.skills",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "below_min_experience"
+      ]
+    },
+    {
+      "case_id": "C010",
+      "input": {
+        "resume_text": "Software Engineer\nJack Samuel | synthetic candidate\n\nSUMMARY\nSoftware engineer with 4 years of experience across services and tooling.\n\nSKILLS\nPython, SQL, REST API, Docker\n\nEDUCATION\nBachelor of Engineering in Computer Science",
+        "target_job_id": "J001"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "top_recommendation.job_id",
+            "op": "equals",
+            "value": "J001"
+          },
+          {
+            "path": "match_score",
+            "op": "gte",
+            "value": 90
+          },
+          {
+            "path": "candidate_profile.skills",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "generic_title"
+      ]
+    },
+    {
+      "case_id": "C011",
+      "input": {
+        "resume_text": "Data Analyst\nKarthik Nair | synthetic candidate\n\nSUMMARY\nAnalyst with 6 years of experience building reports.\n\nSKILLS\nSQL, Excel, Data Visualization, Power BI\n\nEDUCATION\nMaster of Science in Statistics",
+        "target_job_id": "J002"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "match_score",
+            "op": "lte",
+            "value": 60,
+            "name": "skill_gap_is_not_a_strong_match"
+          },
+          {
+            "path": "candidate_profile.skills",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "skill_gap"
+      ]
+    }
+  ]
+}

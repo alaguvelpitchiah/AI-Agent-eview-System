@@ -1,0 +1,40 @@
+# Agents the reviewer can connect to. This is a trusted, local file.
+#
+# type: factory  -> a Python function "package.module:function" called as function(settings, **options)
+#                   that returns an adapter. Use it for agents that run inside this process.
+# type: http     -> connects an existing agent exposed over HTTP (see the commented example).
+# enabled: false -> entry is skipped.
+#
+# The three agents below are examples. The reviewer core does not depend on any of them;
+# remove or disable any entry, including recruitment, without changing other code.
+
+agents:
+  - type: factory
+    factory: "app.target_agents.faq_chatbot.faq_adapter:create_adapter"
+
+  - type: factory
+    factory: "app.target_agents.calculator_agent.calculator_adapter:create_adapter"
+
+  - type: factory
+    factory: "app.target_agents.recruitment.recruitment_adapter:create_adapter"
+
+  # Connect any agent that exposes an HTTP endpoint (research, coding, data analysis, ...).
+  # The request body is {"input": {...}} unless send_as is "raw". output_path, events_path
+  # and usage_path are dotted paths into the JSON response. Secrets use ${ENV_VAR}.
+  - type: http
+    enabled: false
+    agent_id: my-research-agent
+    name: My Research Agent
+    agent_type: research
+    version: "1.0"
+    url: "https://agents.example.com/research/run"
+    headers:
+      Authorization: "Bearer ${RESEARCH_AGENT_TOKEN}"
+    timeout_seconds: 60
+    input_schema:
+      fields:
+        question: {type: str, required: true, min_length: 3, max_length: 1000}
+      allow_extra: false
+    output_path: result
+    events_path: trace
+    usage_path: usage

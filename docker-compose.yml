@@ -1,0 +1,36 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: ai_agent_review_backend
+    ports:
+      - "8004:8004"
+      - "8501:8501"
+      - "8000:8000"
+      - "8001:8001"
+      - "8002:8002"
+      - "8003:8003"
+    environment:
+      - PORT=8004
+      - STREAMLIT_PORT=8501
+      - ALLOW_LOCAL_TESTING=1
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: ["./start_all.sh"]
+    restart: unless-stopped
+
+  frontend-dev:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
+    container_name: ai_agent_review_frontend_dev
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_PORT=5173
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    restart: unless-stopped

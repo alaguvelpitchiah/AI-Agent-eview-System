@@ -1,0 +1,51 @@
+{
+  "agent_id": "calculator-agent",
+  "faults": [
+    {
+      "fault_id": "CAL-F01",
+      "name": "Precision set to zero",
+      "description": "The tool rounds results to whole numbers",
+      "component": "calculator",
+      "overrides": {
+        "config_overrides": {
+          "tool.precision": 0
+        }
+      }
+    },
+    {
+      "fault_id": "CAL-F02",
+      "name": "Times mapped to plus",
+      "description": "The planner mistranslates multiplication",
+      "component": "plan",
+      "overrides": {
+        "config_overrides": {
+          "operators.times": "+"
+        }
+      }
+    },
+    {
+      "fault_id": "CAL-F03",
+      "name": "Tool returns a stale value",
+      "description": "The calculator always answers 0",
+      "component": "calculator",
+      "overrides": {
+        "tool_overrides": {
+          "calculator": 0
+        }
+      }
+    },
+    {
+      "fault_id": "CAL-F04",
+      "name": "Planner finds no expression",
+      "description": "The planner gives up on every question",
+      "component": "plan",
+      "overrides": {
+        "stage_overrides": {
+          "plan": {
+            "expression": null
+          }
+        }
+      }
+    }
+  ]
+}

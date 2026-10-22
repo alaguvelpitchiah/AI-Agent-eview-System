@@ -1,0 +1,174 @@
+{
+  "agent_id": "calculator-agent",
+  "description": "Math questions with expected numeric results.",
+  "cases": [
+    {
+      "case_id": "M001",
+      "input": {
+        "question": "What is 12 plus 30 times 2?"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "result",
+            "op": "equals",
+            "value": 72
+          },
+          {
+            "path": "answer",
+            "op": "contains",
+            "value": "72"
+          }
+        ]
+      },
+      "tags": [
+        "precedence"
+      ]
+    },
+    {
+      "case_id": "M002",
+      "input": {
+        "question": "Calculate 100 divided by 4"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "result",
+            "op": "equals",
+            "value": 25
+          },
+          {
+            "path": "answer",
+            "op": "contains",
+            "value": "25"
+          }
+        ]
+      },
+      "tags": [
+        "basic"
+      ]
+    },
+    {
+      "case_id": "M003",
+      "input": {
+        "question": "what is 15 minus 20"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "result",
+            "op": "equals",
+            "value": -5
+          },
+          {
+            "path": "answer",
+            "op": "contains",
+            "value": "-5"
+          }
+        ]
+      },
+      "tags": [
+        "negative"
+      ]
+    },
+    {
+      "case_id": "M004",
+      "input": {
+        "question": "What is (2 + 3) * 4?"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "result",
+            "op": "equals",
+            "value": 20
+          },
+          {
+            "path": "answer",
+            "op": "contains",
+            "value": "20"
+          }
+        ]
+      },
+      "tags": [
+        "parentheses"
+      ]
+    },
+    {
+      "case_id": "M005",
+      "input": {
+        "question": "What is 2 to the power of 10?"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "result",
+            "op": "equals",
+            "value": 1024
+          },
+          {
+            "path": "answer",
+            "op": "contains",
+            "value": "1024"
+          }
+        ]
+      },
+      "tags": [
+        "power"
+      ]
+    },
+    {
+      "case_id": "M006",
+      "input": {
+        "question": "What is 7 divided by 3?"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "result",
+            "op": "approx",
+            "value": 2.333333,
+            "tolerance": 1e-06
+          }
+        ]
+      },
+      "tags": [
+        "rounding"
+      ]
+    },
+    {
+      "case_id": "M007",
+      "input": {
+        "question": "Tell me a joke"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "result",
+            "op": "is_null"
+          },
+          {
+            "path": "answer",
+            "op": "contains",
+            "value": "could not find"
+          }
+        ]
+      },
+      "tags": [
+        "no_calculation"
+      ]
+    },
+    {
+      "case_id": "M008",
+      "input": {
+        "question": "What is 5 divided by 0?"
+      },
+      "expected": {
+        "expect_error": "ToolError"
+      },
+      "tags": [
+        "tool_failure"
+      ]
+    }
+  ]
+}

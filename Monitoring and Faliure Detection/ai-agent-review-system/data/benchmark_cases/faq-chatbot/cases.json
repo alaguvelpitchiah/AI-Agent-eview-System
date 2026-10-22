@@ -1,0 +1,274 @@
+{
+  "agent_id": "faq-chatbot",
+  "description": "Questions with the FAQ entry that should answer them.",
+  "cases": [
+    {
+      "case_id": "Q001",
+      "input": {
+        "question": "How do I reset my password?"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "source_id",
+            "op": "equals",
+            "value": "F01"
+          },
+          {
+            "path": "answer",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "answerable"
+      ]
+    },
+    {
+      "case_id": "Q002",
+      "input": {
+        "question": "What plans and pricing do you have?"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "source_id",
+            "op": "equals",
+            "value": "F02"
+          },
+          {
+            "path": "answer",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "answerable"
+      ]
+    },
+    {
+      "case_id": "Q003",
+      "input": {
+        "question": "How do I enable 2FA?"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "source_id",
+            "op": "equals",
+            "value": "F03"
+          },
+          {
+            "path": "answer",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "answerable"
+      ]
+    },
+    {
+      "case_id": "Q004",
+      "input": {
+        "question": "I want to delete my account"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "source_id",
+            "op": "equals",
+            "value": "F04"
+          },
+          {
+            "path": "answer",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "answerable"
+      ]
+    },
+    {
+      "case_id": "Q005",
+      "input": {
+        "question": "Can I get a refund?"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "source_id",
+            "op": "equals",
+            "value": "F05"
+          },
+          {
+            "path": "answer",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "answerable"
+      ]
+    },
+    {
+      "case_id": "Q006",
+      "input": {
+        "question": "Which file types can I upload?"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "source_id",
+            "op": "equals",
+            "value": "F06"
+          },
+          {
+            "path": "answer",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "answerable"
+      ]
+    },
+    {
+      "case_id": "Q007",
+      "input": {
+        "question": "How do I share a folder?"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "source_id",
+            "op": "equals",
+            "value": "F07"
+          },
+          {
+            "path": "answer",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "answerable"
+      ]
+    },
+    {
+      "case_id": "Q008",
+      "input": {
+        "question": "How do I contact support?"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "source_id",
+            "op": "equals",
+            "value": "F08"
+          },
+          {
+            "path": "answer",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "answerable"
+      ]
+    },
+    {
+      "case_id": "Q009",
+      "input": {
+        "question": "hello"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "intent",
+            "op": "equals",
+            "value": "greeting"
+          },
+          {
+            "path": "answer",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "small_talk"
+      ]
+    },
+    {
+      "case_id": "Q010",
+      "input": {
+        "question": "thanks!"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "intent",
+            "op": "equals",
+            "value": "thanks"
+          },
+          {
+            "path": "answer",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "small_talk"
+      ]
+    },
+    {
+      "case_id": "Q011",
+      "input": {
+        "question": "What is the weather today?"
+      },
+      "expected": {
+        "checks": [
+          {
+            "path": "source_id",
+            "op": "is_null"
+          },
+          {
+            "path": "intent",
+            "op": "equals",
+            "value": "question"
+          },
+          {
+            "path": "answer",
+            "op": "min_length",
+            "value": 1,
+            "category": "completeness"
+          }
+        ]
+      },
+      "tags": [
+        "unanswerable"
+      ]
+    }
+  ]
+}

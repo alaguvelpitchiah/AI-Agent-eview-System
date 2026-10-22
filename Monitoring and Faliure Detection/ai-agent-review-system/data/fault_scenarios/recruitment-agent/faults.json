@@ -1,0 +1,67 @@
+{
+  "agent_id": "recruitment-agent",
+  "faults": [
+    {
+      "fault_id": "REC-F01",
+      "name": "Parser drops Python",
+      "description": "Skill extraction ignores Python",
+      "component": "resume_parser",
+      "overrides": {
+        "config_overrides": {
+          "parser.disabled_skills": [
+            "python"
+          ]
+        }
+      }
+    },
+    {
+      "fault_id": "REC-F02",
+      "name": "Title-heavy retrieval",
+      "description": "Retrieval gives most weight to the job title",
+      "component": "job_retrieval",
+      "overrides": {
+        "config_overrides": {
+          "retrieval.skill_weight": 0.05,
+          "retrieval.title_weight": 0.95
+        }
+      }
+    },
+    {
+      "fault_id": "REC-F03",
+      "name": "Experience filter disabled",
+      "description": "Under-qualified candidates are not capped",
+      "component": "candidate_ranking",
+      "overrides": {
+        "config_overrides": {
+          "ranking.enforce_experience_filter": false
+        }
+      }
+    },
+    {
+      "fault_id": "REC-F04",
+      "name": "Retrieval threshold too high",
+      "description": "Almost no jobs pass retrieval",
+      "component": "job_retrieval",
+      "overrides": {
+        "config_overrides": {
+          "retrieval.min_score": 0.95
+        }
+      }
+    },
+    {
+      "fault_id": "REC-F05",
+      "name": "Wrong ranking weights",
+      "description": "Experience dominates and skills barely count",
+      "component": "candidate_ranking",
+      "overrides": {
+        "config_overrides": {
+          "ranking.weights.required_skills": 0.02,
+          "ranking.weights.preferred_skills": 0.0,
+          "ranking.weights.experience": 0.6,
+          "ranking.weights.education": 0.38,
+          "ranking.enforce_education_filter": false
+        }
+      }
+    }
+  ]
+}

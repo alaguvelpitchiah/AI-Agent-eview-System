@@ -1,0 +1,4248 @@
+{
+  "meta": {
+    "seed": 7,
+    "pool": 54,
+    "reg": 30,
+    "held": 6,
+    "hidden": 18,
+    "scenarios": 39,
+    "seconds": 6.74
+  },
+  "summary": {
+    "n_scenarios": 39,
+    "rca_exact": {
+      "pipeline": {
+        "k": 39,
+        "n": 39,
+        "value": 1.0,
+        "ci95": [
+          0.9103301463997611,
+          1.0
+        ]
+      },
+      "baseline": {
+        "k": 10,
+        "n": 39,
+        "value": 0.2564102564102564,
+        "ci95": [
+          0.14568625843452188,
+          0.410819567678415
+        ]
+      }
+    },
+    "blame_precision": {
+      "pipeline": {
+        "k": 39,
+        "n": 39,
+        "value": 1.0,
+        "ci95": [
+          0.9103301463997611,
+          1.0
+        ]
+      },
+      "baseline": {
+        "k": 14,
+        "n": 39,
+        "value": 0.358974358974359,
+        "ci95": [
+          0.22741884696491105,
+          0.515821368153105
+        ]
+      }
+    },
+    "interaction_recall": {
+      "pipeline": {
+        "k": 6,
+        "n": 6,
+        "value": 1.0,
+        "ci95": [
+          0.6096569663469354,
+          0.9999999999999999
+        ]
+      },
+      "baseline": {
+        "k": 0,
+        "n": 6,
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.3903430336530645
+        ]
+      }
+    },
+    "false_interaction_rate": {
+      "pipeline": {
+        "k": 0,
+        "n": 6,
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.3903430336530645
+        ]
+      },
+      "baseline": {
+        "k": 0,
+        "n": 0,
+        "value": null,
+        "ci95": [
+          null,
+          null
+        ]
+      }
+    },
+    "conflict_recall": {
+      "pipeline": {
+        "k": 20,
+        "n": 20,
+        "value": 1.0,
+        "ci95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      "baseline": {
+        "k": 0,
+        "n": 20,
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.16113012549493322
+        ]
+      }
+    },
+    "conflict_precision": {
+      "pipeline": {
+        "k": 20,
+        "n": 20,
+        "value": 1.0,
+        "ci95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      "baseline": {
+        "k": 0,
+        "n": 0,
+        "value": null,
+        "ci95": [
+          null,
+          null
+        ]
+      }
+    },
+    "correct_fix": {
+      "pipeline": {
+        "k": 36,
+        "n": 39,
+        "value": 0.9230769230769231,
+        "ci95": [
+          0.7967862687194474,
+          0.9734930859265043
+        ]
+      },
+      "baseline": {
+        "k": 10,
+        "n": 39,
+        "value": 0.2564102564102564,
+        "ci95": [
+          0.14568625843452188,
+          0.410819567678415
+        ]
+      }
+    },
+    "unsafe_recommendation": {
+      "pipeline": {
+        "k": 3,
+        "n": 39,
+        "value": 0.07692307692307693,
+        "ci95": [
+          0.026506914073495688,
+          0.2032137312805527
+        ]
+      },
+      "baseline": {
+        "k": 17,
+        "n": 39,
+        "value": 0.4358974358974359,
+        "ci95": [
+          0.2930452416170466,
+          0.5902457652547789
+        ]
+      }
+    },
+    "abstain": {
+      "pipeline": {
+        "k": 0,
+        "n": 39,
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.08966985360023902
+        ]
+      },
+      "baseline": {
+        "k": 12,
+        "n": 39,
+        "value": 0.3076923076923077,
+        "ci95": [
+          0.1856575344598306,
+          0.464215486155646
+        ]
+      }
+    },
+    "regression_rate": {
+      "pipeline": {
+        "k": 0,
+        "n": 39,
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.08966985360023902
+        ]
+      },
+      "baseline": {
+        "k": 17,
+        "n": 27,
+        "value": 0.6296296296296297,
+        "ci95": [
+          0.442289046234463,
+          0.7846771293206314
+        ]
+      }
+    },
+    "mean_runs": {
+      "pipeline": 1125.8974358974358,
+      "baseline": 2.8461538461538463
+    },
+    "paired": {
+      "rca_exact": {
+        "pipeline_only": 29,
+        "baseline_only": 0,
+        "p_value": 3.725290298461914e-09
+      },
+      "correct_fix": {
+        "pipeline_only": 26,
+        "baseline_only": 0,
+        "p_value": 2.9802322387695312e-08
+      }
+    },
+    "slices": {
+      "conflict_trap": {
+        "n": 6,
+        "rca_exact": {
+          "pipeline": 6,
+          "baseline": 0
+        },
+        "correct_fix": {
+          "pipeline": 6,
+          "baseline": 0
+        },
+        "unsafe": {
+          "pipeline": 0,
+          "baseline": 6
+        },
+        "abstained": 0
+      },
+      "double_independent": {
+        "n": 6,
+        "rca_exact": {
+          "pipeline": 6,
+          "baseline": 0
+        },
+        "correct_fix": {
+          "pipeline": 6,
+          "baseline": 0
+        },
+        "unsafe": {
+          "pipeline": 0,
+          "baseline": 0
+        },
+        "abstained": 0
+      },
+      "double_synergistic": {
+        "n": 6,
+        "rca_exact": {
+          "pipeline": 6,
+          "baseline": 0
+        },
+        "correct_fix": {
+          "pipeline": 3,
+          "baseline": 0
+        },
+        "unsafe": {
+          "pipeline": 3,
+          "baseline": 6
+        },
+        "abstained": 0
+      },
+      "single_heldout": {
+        "n": 9,
+        "rca_exact": {
+          "pipeline": 9,
+          "baseline": 4
+        },
+        "correct_fix": {
+          "pipeline": 9,
+          "baseline": 4
+        },
+        "unsafe": {
+          "pipeline": 0,
+          "baseline": 2
+        },
+        "abstained": 0
+      },
+      "single_known": {
+        "n": 12,
+        "rca_exact": {
+          "pipeline": 12,
+          "baseline": 6
+        },
+        "correct_fix": {
+          "pipeline": 12,
+          "baseline": 6
+        },
+        "unsafe": {
+          "pipeline": 0,
+          "baseline": 3
+        },
+        "abstained": 0
+      }
+    },
+    "pipeline_misses": [
+      {
+        "sid": "double_synergistic:F03+F06:P-n2k2-plain",
+        "truth": [
+          "extract_skills",
+          "score"
+        ],
+        "diagnosed": [
+          "extract_skills",
+          "score"
+        ],
+        "outcome": "approval_pending",
+        "selected": [
+          "RP2",
+          "RP3"
+        ],
+        "correct": false,
+        "gate_failed": []
+      },
+      {
+        "sid": "double_synergistic:F03+F06:P-n4k3-plain",
+        "truth": [
+          "extract_skills",
+          "score"
+        ],
+        "diagnosed": [
+          "extract_skills",
+          "score"
+        ],
+        "outcome": "approval_pending",
+        "selected": [
+          "RP2",
+          "RP3"
+        ],
+        "correct": false,
+        "gate_failed": []
+      },
+      {
+        "sid": "double_synergistic:F03+F06:P-n4k3-digits",
+        "truth": [
+          "extract_skills",
+          "score"
+        ],
+        "diagnosed": [
+          "extract_skills",
+          "score"
+        ],
+        "outcome": "approval_pending",
+        "selected": [
+          "RP2",
+          "RP3"
+        ],
+        "correct": false,
+        "gate_failed": []
+      }
+    ]
+  },
+  "rows": [
+    {
+      "sid": "single_known:F01:P-n2k2-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F01"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1140,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_known:F01:P-n4k4-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F01"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1140,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_known:F01:P-n4k3-digits",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F01"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1140,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_known:F02:P-n2k1-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F02"
+      ],
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 1426,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [
+        "RP2"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 18,
+      "base_broke": 0,
+      "base_runs": 2
+    },
+    {
+      "sid": "single_known:F02:P-n2k1-caps",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F02"
+      ],
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 1426,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [
+        "RP2"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 18,
+      "base_broke": 0,
+      "base_runs": 2
+    },
+    {
+      "sid": "single_known:F02:P-n2k1-digits",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F02"
+      ],
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 1426,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [
+        "RP2"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 18,
+      "base_broke": 0,
+      "base_runs": 2
+    },
+    {
+      "sid": "single_known:F03:P-n2k1-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 532,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_known:F03:P-n4k2-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 532,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_known:F03:P-n4k2-digits",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 532,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_known:F04:P-n3k2-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F04"
+      ],
+      "truth_stages": [
+        "decide"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "decide"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP4"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 286,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP4"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 14,
+      "base_broke": 0,
+      "base_runs": 2
+    },
+    {
+      "sid": "single_known:F04:P-n4k2-caps",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F04"
+      ],
+      "truth_stages": [
+        "decide"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "decide"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP4"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 218,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP4"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 14,
+      "base_broke": 0,
+      "base_runs": 2
+    },
+    {
+      "sid": "single_known:F04:P-n4k3-digits",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F04"
+      ],
+      "truth_stages": [
+        "decide"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "decide"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP4"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 286,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP4"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 14,
+      "base_broke": 0,
+      "base_runs": 2
+    },
+    {
+      "sid": "single_heldout:F05:P-n2k1-caps",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F05"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 2682,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F05:P-n5k3-caps",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F05"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 2682,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F05:P-n3k3-caps",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F05"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 2682,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F06:P-n5k4-plain",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP5",
+          "RS-extract_skills"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP5",
+          "RS-extract_skills"
+        ]
+      ],
+      "pipe_sel": [
+        "RS-extract_skills"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 16,
+      "pipe_broke": 0,
+      "pipe_runs": 1186,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 16,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F06:P-n2k1-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-extract_skills"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 16,
+      "pipe_broke": 0,
+      "pipe_runs": 1186,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [
+        "RS-extract_skills"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 16,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F06:P-n5k3-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP5",
+          "RS-extract_skills"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP5",
+          "RS-extract_skills"
+        ]
+      ],
+      "pipe_sel": [
+        "RS-extract_skills"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 16,
+      "pipe_broke": 0,
+      "pipe_runs": 1186,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 16,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F07:P-n2k1-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F07"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 13,
+      "pipe_broke": 0,
+      "pipe_runs": 2260,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "tokenize",
+      "base_sel": [
+        "RS-tokenize"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 13,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F07:P-n4k4-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F07"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 13,
+      "pipe_broke": 0,
+      "pipe_runs": 2260,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "tokenize",
+      "base_sel": [
+        "RS-tokenize"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 13,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F07:P-n4k3-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F07"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 13,
+      "pipe_broke": 0,
+      "pipe_runs": 2260,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "tokenize",
+      "base_sel": [
+        "RS-tokenize"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 13,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "conflict_trap:F03:P-n2k1-plain",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 162,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "conflict_trap:F03:P-n2k1-caps",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 162,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "conflict_trap:F03:P-n2k1-digits",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 162,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "conflict_trap:F03:P-n4k2-plain",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 162,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "conflict_trap:F03:P-n4k2-caps",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 162,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "conflict_trap:F03:P-n4k2-digits",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 162,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_synergistic:F02+F03:P-n2k2-plain",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F02",
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "score"
+          ],
+          "interacts": true,
+          "kind": "synergistic"
+        }
+      ],
+      "expected_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2",
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 15,
+      "pipe_broke": 0,
+      "pipe_runs": 1244,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 15,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_synergistic:F03+F06:P-n2k2-plain",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F03",
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "score"
+          ],
+          "interacts": true,
+          "kind": "synergistic"
+        }
+      ],
+      "expected_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2",
+        "RP3"
+      ],
+      "pipe_correct": false,
+      "pipe_hidden_before": 13,
+      "pipe_broke": 0,
+      "pipe_runs": 1000,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 13,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_synergistic:F02+F03:P-n4k3-plain",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F02",
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "score"
+          ],
+          "interacts": true,
+          "kind": "synergistic"
+        }
+      ],
+      "expected_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2",
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 15,
+      "pipe_broke": 0,
+      "pipe_runs": 1244,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 15,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_synergistic:F03+F06:P-n4k3-plain",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F03",
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "score"
+          ],
+          "interacts": true,
+          "kind": "synergistic"
+        }
+      ],
+      "expected_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2",
+        "RP3"
+      ],
+      "pipe_correct": false,
+      "pipe_hidden_before": 13,
+      "pipe_broke": 0,
+      "pipe_runs": 1000,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 13,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_synergistic:F02+F03:P-n4k3-digits",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F02",
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "score"
+          ],
+          "interacts": true,
+          "kind": "synergistic"
+        }
+      ],
+      "expected_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2",
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 15,
+      "pipe_broke": 0,
+      "pipe_runs": 1244,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 15,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_synergistic:F03+F06:P-n4k3-digits",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F03",
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "score"
+          ],
+          "interacts": true,
+          "kind": "synergistic"
+        }
+      ],
+      "expected_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2",
+        "RP3"
+      ],
+      "pipe_correct": false,
+      "pipe_hidden_before": 13,
+      "pipe_broke": 0,
+      "pipe_runs": 1000,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 13,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_independent:F01+F02:P-n2k1-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F01",
+        "TOY-F02"
+      ],
+      "truth_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "tokenize",
+            "extract_skills"
+          ],
+          "interacts": false,
+          "kind": null
+        }
+      ],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1",
+        "RP2"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1156,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_independent:F01+F03:P-n2k1-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F01",
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "tokenize",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "tokenize",
+            "score"
+          ],
+          "interacts": false,
+          "kind": null
+        }
+      ],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1",
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1156,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_independent:F01+F04:P-n3k2-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F01",
+        "TOY-F04"
+      ],
+      "truth_stages": [
+        "tokenize",
+        "decide"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize",
+        "decide"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "tokenize",
+            "decide"
+          ],
+          "interacts": false,
+          "kind": null
+        }
+      ],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1",
+        "RP4"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1156,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_independent:F01+F06:P-n5k4-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F01",
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "tokenize",
+            "extract_skills"
+          ],
+          "interacts": false,
+          "kind": null
+        }
+      ],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1",
+        "RS-extract_skills"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1156,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_independent:F02+F04:P-n2k1-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F02",
+        "TOY-F04"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "decide"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "decide"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "decide"
+          ],
+          "interacts": false,
+          "kind": null
+        }
+      ],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2",
+        "RP4"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 576,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_independent:F02+F05:P-n2k1-caps",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F02",
+        "TOY-F05"
+      ],
+      "truth_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "tokenize",
+            "extract_skills"
+          ],
+          "interacts": false,
+          "kind": null
+        }
+      ],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize",
+        "RP2"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 2538,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    }
+  ],
+  "summary_posthoc": {
+    "n_scenarios": 39,
+    "rca_exact": {
+      "pipeline": {
+        "k": 39,
+        "n": 39,
+        "value": 1.0,
+        "ci95": [
+          0.9103301463997611,
+          1.0
+        ]
+      },
+      "baseline": {
+        "k": 10,
+        "n": 39,
+        "value": 0.2564102564102564,
+        "ci95": [
+          0.14568625843452188,
+          0.410819567678415
+        ]
+      }
+    },
+    "blame_precision": {
+      "pipeline": {
+        "k": 39,
+        "n": 39,
+        "value": 1.0,
+        "ci95": [
+          0.9103301463997611,
+          1.0
+        ]
+      },
+      "baseline": {
+        "k": 14,
+        "n": 39,
+        "value": 0.358974358974359,
+        "ci95": [
+          0.22741884696491105,
+          0.515821368153105
+        ]
+      }
+    },
+    "interaction_recall": {
+      "pipeline": {
+        "k": 6,
+        "n": 6,
+        "value": 1.0,
+        "ci95": [
+          0.6096569663469354,
+          0.9999999999999999
+        ]
+      },
+      "baseline": {
+        "k": 0,
+        "n": 6,
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.3903430336530645
+        ]
+      }
+    },
+    "false_interaction_rate": {
+      "pipeline": {
+        "k": 0,
+        "n": 6,
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.3903430336530645
+        ]
+      },
+      "baseline": {
+        "k": 0,
+        "n": 0,
+        "value": null,
+        "ci95": [
+          null,
+          null
+        ]
+      }
+    },
+    "conflict_recall": {
+      "pipeline": {
+        "k": 20,
+        "n": 20,
+        "value": 1.0,
+        "ci95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      "baseline": {
+        "k": 0,
+        "n": 20,
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.16113012549493322
+        ]
+      }
+    },
+    "conflict_precision": {
+      "pipeline": {
+        "k": 20,
+        "n": 20,
+        "value": 1.0,
+        "ci95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      "baseline": {
+        "k": 0,
+        "n": 0,
+        "value": null,
+        "ci95": [
+          null,
+          null
+        ]
+      }
+    },
+    "correct_fix": {
+      "pipeline": {
+        "k": 39,
+        "n": 39,
+        "value": 1.0,
+        "ci95": [
+          0.9103301463997611,
+          1.0
+        ]
+      },
+      "baseline": {
+        "k": 10,
+        "n": 39,
+        "value": 0.2564102564102564,
+        "ci95": [
+          0.14568625843452188,
+          0.410819567678415
+        ]
+      }
+    },
+    "unsafe_recommendation": {
+      "pipeline": {
+        "k": 0,
+        "n": 39,
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.08966985360023902
+        ]
+      },
+      "baseline": {
+        "k": 17,
+        "n": 39,
+        "value": 0.4358974358974359,
+        "ci95": [
+          0.2930452416170466,
+          0.5902457652547789
+        ]
+      }
+    },
+    "abstain": {
+      "pipeline": {
+        "k": 0,
+        "n": 39,
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.08966985360023902
+        ]
+      },
+      "baseline": {
+        "k": 12,
+        "n": 39,
+        "value": 0.3076923076923077,
+        "ci95": [
+          0.1856575344598306,
+          0.464215486155646
+        ]
+      }
+    },
+    "regression_rate": {
+      "pipeline": {
+        "k": 0,
+        "n": 39,
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.08966985360023902
+        ]
+      },
+      "baseline": {
+        "k": 17,
+        "n": 27,
+        "value": 0.6296296296296297,
+        "ci95": [
+          0.442289046234463,
+          0.7846771293206314
+        ]
+      }
+    },
+    "mean_runs": {
+      "pipeline": 1151.820512820513,
+      "baseline": 2.8461538461538463
+    },
+    "paired": {
+      "rca_exact": {
+        "pipeline_only": 29,
+        "baseline_only": 0,
+        "p_value": 3.725290298461914e-09
+      },
+      "correct_fix": {
+        "pipeline_only": 29,
+        "baseline_only": 0,
+        "p_value": 3.725290298461914e-09
+      }
+    },
+    "slices": {
+      "conflict_trap": {
+        "n": 6,
+        "rca_exact": {
+          "pipeline": 6,
+          "baseline": 0
+        },
+        "correct_fix": {
+          "pipeline": 6,
+          "baseline": 0
+        },
+        "unsafe": {
+          "pipeline": 0,
+          "baseline": 6
+        },
+        "abstained": 0
+      },
+      "double_independent": {
+        "n": 6,
+        "rca_exact": {
+          "pipeline": 6,
+          "baseline": 0
+        },
+        "correct_fix": {
+          "pipeline": 6,
+          "baseline": 0
+        },
+        "unsafe": {
+          "pipeline": 0,
+          "baseline": 0
+        },
+        "abstained": 0
+      },
+      "double_synergistic": {
+        "n": 6,
+        "rca_exact": {
+          "pipeline": 6,
+          "baseline": 0
+        },
+        "correct_fix": {
+          "pipeline": 6,
+          "baseline": 0
+        },
+        "unsafe": {
+          "pipeline": 0,
+          "baseline": 6
+        },
+        "abstained": 0
+      },
+      "single_heldout": {
+        "n": 9,
+        "rca_exact": {
+          "pipeline": 9,
+          "baseline": 4
+        },
+        "correct_fix": {
+          "pipeline": 9,
+          "baseline": 4
+        },
+        "unsafe": {
+          "pipeline": 0,
+          "baseline": 2
+        },
+        "abstained": 0
+      },
+      "single_known": {
+        "n": 12,
+        "rca_exact": {
+          "pipeline": 12,
+          "baseline": 6
+        },
+        "correct_fix": {
+          "pipeline": 12,
+          "baseline": 6
+        },
+        "unsafe": {
+          "pipeline": 0,
+          "baseline": 3
+        },
+        "abstained": 0
+      }
+    },
+    "pipeline_misses": []
+  },
+  "rows_posthoc": [
+    {
+      "sid": "single_known:F01:P-n2k2-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F01"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1145,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_known:F01:P-n4k4-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F01"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1145,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_known:F01:P-n4k3-digits",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F01"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1145,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_known:F02:P-n2k1-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F02"
+      ],
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 1431,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [
+        "RP2"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 18,
+      "base_broke": 0,
+      "base_runs": 2
+    },
+    {
+      "sid": "single_known:F02:P-n2k1-caps",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F02"
+      ],
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 1431,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [
+        "RP2"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 18,
+      "base_broke": 0,
+      "base_runs": 2
+    },
+    {
+      "sid": "single_known:F02:P-n2k1-digits",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F02"
+      ],
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 1431,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [
+        "RP2"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 18,
+      "base_broke": 0,
+      "base_runs": 2
+    },
+    {
+      "sid": "single_known:F03:P-n2k1-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 537,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_known:F03:P-n4k2-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 537,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_known:F03:P-n4k2-digits",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 537,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_known:F04:P-n3k2-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F04"
+      ],
+      "truth_stages": [
+        "decide"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "decide"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP4"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 291,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP4"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 14,
+      "base_broke": 0,
+      "base_runs": 2
+    },
+    {
+      "sid": "single_known:F04:P-n4k2-caps",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F04"
+      ],
+      "truth_stages": [
+        "decide"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "decide"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP4"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 223,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP4"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 14,
+      "base_broke": 0,
+      "base_runs": 2
+    },
+    {
+      "sid": "single_known:F04:P-n4k3-digits",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F04"
+      ],
+      "truth_stages": [
+        "decide"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "decide"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP4"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 291,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP4"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 14,
+      "base_broke": 0,
+      "base_runs": 2
+    },
+    {
+      "sid": "single_heldout:F05:P-n2k1-caps",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F05"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 2687,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F05:P-n5k3-caps",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F05"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 2687,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F05:P-n3k3-caps",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F05"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 2687,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F06:P-n5k4-plain",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP5",
+          "RS-extract_skills"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP5",
+          "RS-extract_skills"
+        ]
+      ],
+      "pipe_sel": [
+        "RS-extract_skills"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 16,
+      "pipe_broke": 0,
+      "pipe_runs": 1191,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 16,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F06:P-n2k1-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-extract_skills"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 16,
+      "pipe_broke": 0,
+      "pipe_runs": 1191,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [
+        "RS-extract_skills"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 16,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F06:P-n5k3-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP5",
+          "RS-extract_skills"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP5",
+          "RS-extract_skills"
+        ]
+      ],
+      "pipe_sel": [
+        "RS-extract_skills"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 16,
+      "pipe_broke": 0,
+      "pipe_runs": 1191,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 16,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F07:P-n2k1-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F07"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 13,
+      "pipe_broke": 0,
+      "pipe_runs": 2265,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "tokenize",
+      "base_sel": [
+        "RS-tokenize"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 13,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F07:P-n4k4-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F07"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 13,
+      "pipe_broke": 0,
+      "pipe_runs": 2265,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "tokenize",
+      "base_sel": [
+        "RS-tokenize"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 13,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "single_heldout:F07:P-n4k3-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F07"
+      ],
+      "truth_stages": [
+        "tokenize"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 13,
+      "pipe_broke": 0,
+      "pipe_runs": 2265,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "tokenize",
+      "base_sel": [
+        "RS-tokenize"
+      ],
+      "base_correct": true,
+      "base_hidden_before": 13,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "conflict_trap:F03:P-n2k1-plain",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 167,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "conflict_trap:F03:P-n2k1-caps",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 167,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "conflict_trap:F03:P-n2k1-digits",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 167,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "conflict_trap:F03:P-n4k2-plain",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 167,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "conflict_trap:F03:P-n4k2-caps",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 167,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "conflict_trap:F03:P-n4k2-digits",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "single_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "score"
+      ],
+      "pred_pairs": [],
+      "expected_pairs": [],
+      "pred_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "pipe_sel": [
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 18,
+      "pipe_broke": 0,
+      "pipe_runs": 167,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 18,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_synergistic:F02+F03:P-n2k2-plain",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F02",
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "score"
+          ],
+          "interacts": true,
+          "kind": "synergistic"
+        }
+      ],
+      "expected_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2",
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 15,
+      "pipe_broke": 0,
+      "pipe_runs": 1249,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 15,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_synergistic:F03+F06:P-n2k2-plain",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F03",
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "score"
+          ],
+          "interacts": true,
+          "kind": "synergistic"
+        }
+      ],
+      "expected_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-extract_skills",
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 13,
+      "pipe_broke": 0,
+      "pipe_runs": 1277,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 13,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_synergistic:F02+F03:P-n4k3-plain",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F02",
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "score"
+          ],
+          "interacts": true,
+          "kind": "synergistic"
+        }
+      ],
+      "expected_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2",
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 15,
+      "pipe_broke": 0,
+      "pipe_runs": 1249,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 15,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_synergistic:F03+F06:P-n4k3-plain",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F03",
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "score"
+          ],
+          "interacts": true,
+          "kind": "synergistic"
+        }
+      ],
+      "expected_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-extract_skills",
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 13,
+      "pipe_broke": 0,
+      "pipe_runs": 1277,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 13,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_synergistic:F02+F03:P-n4k3-digits",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F02",
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "score"
+          ],
+          "interacts": true,
+          "kind": "synergistic"
+        }
+      ],
+      "expected_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2",
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 15,
+      "pipe_broke": 0,
+      "pipe_runs": 1249,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 15,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_synergistic:F03+F06:P-n4k3-digits",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F03",
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "score"
+          ],
+          "interacts": true,
+          "kind": "synergistic"
+        }
+      ],
+      "expected_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-extract_skills",
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 13,
+      "pipe_broke": 0,
+      "pipe_runs": 1277,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "decide",
+      "base_sel": [
+        "RP5"
+      ],
+      "base_correct": false,
+      "base_hidden_before": 13,
+      "base_broke": 2,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_independent:F01+F02:P-n2k1-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F01",
+        "TOY-F02"
+      ],
+      "truth_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "tokenize",
+            "extract_skills"
+          ],
+          "interacts": false,
+          "kind": null
+        }
+      ],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1",
+        "RP2"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1161,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_independent:F01+F03:P-n2k1-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F01",
+        "TOY-F03"
+      ],
+      "truth_stages": [
+        "tokenize",
+        "score"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize",
+        "score"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "tokenize",
+            "score"
+          ],
+          "interacts": false,
+          "kind": null
+        }
+      ],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1",
+        "RP3"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1161,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_independent:F01+F04:P-n3k2-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F01",
+        "TOY-F04"
+      ],
+      "truth_stages": [
+        "tokenize",
+        "decide"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize",
+        "decide"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "tokenize",
+            "decide"
+          ],
+          "interacts": false,
+          "kind": null
+        }
+      ],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1",
+        "RP4"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1161,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_independent:F01+F06:P-n5k4-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F01",
+        "TOY-F06"
+      ],
+      "truth_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "tokenize",
+            "extract_skills"
+          ],
+          "interacts": false,
+          "kind": null
+        }
+      ],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP1",
+        "RS-extract_skills"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 1161,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_independent:F02+F04:P-n2k1-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F02",
+        "TOY-F04"
+      ],
+      "truth_stages": [
+        "extract_skills",
+        "decide"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "extract_skills",
+        "decide"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "extract_skills",
+            "decide"
+          ],
+          "interacts": false,
+          "kind": null
+        }
+      ],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RP2",
+        "RP4"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 10,
+      "pipe_broke": 0,
+      "pipe_runs": 581,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    },
+    {
+      "sid": "double_independent:F02+F05:P-n2k1-caps",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F02",
+        "TOY-F05"
+      ],
+      "truth_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "outcome": "approval_pending",
+      "dx_verdict": "joint_root_cause",
+      "dx_confidence": "high",
+      "dx_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "pred_pairs": [
+        {
+          "pair": [
+            "tokenize",
+            "extract_skills"
+          ],
+          "interacts": false,
+          "kind": null
+        }
+      ],
+      "expected_pairs": [],
+      "pred_conflicts": [],
+      "oracle_conflicts": [],
+      "pipe_sel": [
+        "RS-tokenize",
+        "RP2"
+      ],
+      "pipe_correct": true,
+      "pipe_hidden_before": 14,
+      "pipe_broke": 0,
+      "pipe_runs": 2543,
+      "gate_failed": [],
+      "notes": [],
+      "base_blamed": "extract_skills",
+      "base_sel": [],
+      "base_correct": null,
+      "base_hidden_before": 0,
+      "base_broke": 0,
+      "base_runs": 3
+    }
+  ]
+}

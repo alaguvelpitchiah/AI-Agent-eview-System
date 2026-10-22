@@ -1,0 +1,20 @@
+version: "1.0.0"
+
+planner:
+  max_expression_length: 100
+
+operators:                 # spoken form -> symbol
+  plus: "+"
+  minus: "-"
+  times: "*"
+  multiplied by: "*"
+  divided by: "/"
+  to the power of: "**"
+
+tool:
+  precision: 6             # decimal places kept in tool results
+  max_exponent: 10
+
+response:
+  template: "The answer is {result}."
+  fallback_message: "I could not find a calculation in that question."

@@ -1,0 +1,10 @@
+[
+  {"id": "F01", "question": "How do I reset my password?", "keywords": ["reset", "password", "forgot", "login"], "answer": "Use the Forgot password link on the sign-in page. A reset link is emailed to you and expires after 30 minutes."},
+  {"id": "F02", "question": "What storage plans are available?", "keywords": ["plans", "pricing", "price", "cost", "storage", "free"], "answer": "Acme Cloud offers Free (5 GB), Plus (200 GB) and Pro (2 TB) plans."},
+  {"id": "F03", "question": "How do I enable two-factor authentication?", "keywords": ["two", "factor", "2fa", "authentication", "security", "enable"], "answer": "Open Settings, choose Security, then turn on two-factor authentication and scan the QR code."},
+  {"id": "F04", "question": "How do I delete my account?", "keywords": ["delete", "account", "close", "remove"], "answer": "Go to Settings, then Account, then Delete account. Deletion becomes permanent after 14 days."},
+  {"id": "F05", "question": "What is your refund policy?", "keywords": ["refund", "money", "back", "cancel", "subscription"], "answer": "Annual plans can be refunded within 30 days of purchase."},
+  {"id": "F06", "question": "Which file types can I upload?", "keywords": ["file", "files", "types", "upload", "format", "formats", "size"], "answer": "Most file types are supported. A single file can be up to 5 GB."},
+  {"id": "F07", "question": "How do I share a folder with someone?", "keywords": ["share", "folder", "link", "invite", "collaborate"], "answer": "Right-click a folder, choose Share, then enter an email address or create a link."},
+  {"id": "F08", "question": "How can I contact support?", "keywords": ["contact", "support", "help", "email", "phone"], "answer": "Email support@example.com. Support is available on weekdays from 9am to 6pm."}
+]

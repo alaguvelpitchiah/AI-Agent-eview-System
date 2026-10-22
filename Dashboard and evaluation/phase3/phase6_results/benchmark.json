@@ -1,0 +1,2119 @@
+{
+  "meta": {
+    "seed": 7,
+    "pool": 54,
+    "reg": 30,
+    "held": 6,
+    "hidden": 18,
+    "scenarios": 39,
+    "seconds": 6.74
+  },
+  "pool": [
+    {
+      "case_id": "P-n2k0-plain",
+      "input": {
+        "resume": "experienced developer",
+        "required": [
+          "python",
+          "sql"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n2k0-caps",
+      "input": {
+        "resume": "Experienced Developer",
+        "required": [
+          "python",
+          "sql"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n2k0-digits",
+      "input": {
+        "resume": "5 years experience",
+        "required": [
+          "python",
+          "sql"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n2k1-plain",
+      "input": {
+        "resume": "experienced developer with sql",
+        "required": [
+          "python",
+          "sql"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n2k1-caps",
+      "input": {
+        "resume": "Experienced Developer with SQL",
+        "required": [
+          "python",
+          "sql"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n2k1-digits",
+      "input": {
+        "resume": "5 years experience with sql",
+        "required": [
+          "python",
+          "sql"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n2k2-plain",
+      "input": {
+        "resume": "experienced developer with python and sql",
+        "required": [
+          "python",
+          "sql"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n2k2-caps",
+      "input": {
+        "resume": "Experienced Developer with Python and SQL",
+        "required": [
+          "python",
+          "sql"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n2k2-digits",
+      "input": {
+        "resume": "5 years experience with python and sql",
+        "required": [
+          "python",
+          "sql"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n3k0-plain",
+      "input": {
+        "resume": "experienced developer",
+        "required": [
+          "python",
+          "sql",
+          "docker"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n3k0-caps",
+      "input": {
+        "resume": "Experienced Developer",
+        "required": [
+          "python",
+          "sql",
+          "docker"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n3k0-digits",
+      "input": {
+        "resume": "5 years experience",
+        "required": [
+          "python",
+          "sql",
+          "docker"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n3k1-plain",
+      "input": {
+        "resume": "experienced developer with sql",
+        "required": [
+          "python",
+          "sql",
+          "docker"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n3k1-caps",
+      "input": {
+        "resume": "Experienced Developer with SQL",
+        "required": [
+          "python",
+          "sql",
+          "docker"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n3k1-digits",
+      "input": {
+        "resume": "5 years experience with sql",
+        "required": [
+          "python",
+          "sql",
+          "docker"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n3k2-plain",
+      "input": {
+        "resume": "experienced developer with docker and python",
+        "required": [
+          "python",
+          "sql",
+          "docker"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n3k2-caps",
+      "input": {
+        "resume": "Experienced Developer with Docker and Python",
+        "required": [
+          "python",
+          "sql",
+          "docker"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n3k2-digits",
+      "input": {
+        "resume": "5 years experience with docker and python",
+        "required": [
+          "python",
+          "sql",
+          "docker"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n3k3-plain",
+      "input": {
+        "resume": "experienced developer with python and sql and docker",
+        "required": [
+          "python",
+          "sql",
+          "docker"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n3k3-caps",
+      "input": {
+        "resume": "Experienced Developer with Python and SQL and Docker",
+        "required": [
+          "python",
+          "sql",
+          "docker"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n3k3-digits",
+      "input": {
+        "resume": "5 years experience with python and sql and docker",
+        "required": [
+          "python",
+          "sql",
+          "docker"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n4k0-plain",
+      "input": {
+        "resume": "experienced developer",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n4k0-caps",
+      "input": {
+        "resume": "Experienced Developer",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n4k0-digits",
+      "input": {
+        "resume": "5 years experience",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n4k1-plain",
+      "input": {
+        "resume": "experienced developer with sql",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n4k1-caps",
+      "input": {
+        "resume": "Experienced Developer with SQL",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n4k1-digits",
+      "input": {
+        "resume": "5 years experience with sql",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n4k2-plain",
+      "input": {
+        "resume": "experienced developer with docker and java",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n4k2-caps",
+      "input": {
+        "resume": "Experienced Developer with Docker and Java",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n4k2-digits",
+      "input": {
+        "resume": "5 years experience with docker and java",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n4k3-plain",
+      "input": {
+        "resume": "experienced developer with java and python and sql",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n4k3-caps",
+      "input": {
+        "resume": "Experienced Developer with Java and Python and SQL",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n4k3-digits",
+      "input": {
+        "resume": "5 years experience with java and python and sql",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n4k4-plain",
+      "input": {
+        "resume": "experienced developer with python and sql and docker and java",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n4k4-caps",
+      "input": {
+        "resume": "Experienced Developer with Python and SQL and Docker and Java",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n4k4-digits",
+      "input": {
+        "resume": "5 years experience with python and sql and docker and java",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n5k0-plain",
+      "input": {
+        "resume": "experienced developer",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n5k0-caps",
+      "input": {
+        "resume": "Experienced Developer",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n5k0-digits",
+      "input": {
+        "resume": "5 years experience",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n5k1-plain",
+      "input": {
+        "resume": "experienced developer with sql",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n5k1-caps",
+      "input": {
+        "resume": "Experienced Developer with SQL",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n5k1-digits",
+      "input": {
+        "resume": "5 years experience with sql",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n5k2-plain",
+      "input": {
+        "resume": "experienced developer with docker and java",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n5k2-caps",
+      "input": {
+        "resume": "Experienced Developer with Docker and Java",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n5k2-digits",
+      "input": {
+        "resume": "5 years experience with docker and java",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "reject"
+      }
+    },
+    {
+      "case_id": "P-n5k3-plain",
+      "input": {
+        "resume": "experienced developer with java and aws and python",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n5k3-caps",
+      "input": {
+        "resume": "Experienced Developer with Java and AWS and Python",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n5k3-digits",
+      "input": {
+        "resume": "5 years experience with java and aws and python",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n5k4-plain",
+      "input": {
+        "resume": "experienced developer with aws and python and sql and docker",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n5k4-caps",
+      "input": {
+        "resume": "Experienced Developer with AWS and Python and SQL and Docker",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n5k4-digits",
+      "input": {
+        "resume": "5 years experience with aws and python and sql and docker",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n5k5-plain",
+      "input": {
+        "resume": "experienced developer with python and sql and docker and java and aws",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n5k5-caps",
+      "input": {
+        "resume": "Experienced Developer with Python and SQL and Docker and Java and AWS",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    },
+    {
+      "case_id": "P-n5k5-digits",
+      "input": {
+        "resume": "5 years experience with python and sql and docker and java and aws",
+        "required": [
+          "python",
+          "sql",
+          "docker",
+          "java",
+          "aws"
+        ]
+      },
+      "expected": {
+        "decision": "match"
+      }
+    }
+  ],
+  "reg": [
+    "P-n3k1-plain",
+    "P-n2k2-plain",
+    "P-n3k2-plain",
+    "P-n2k0-plain",
+    "P-n4k3-plain",
+    "P-n5k4-plain",
+    "P-n2k1-plain",
+    "P-n2k1-caps",
+    "P-n2k1-digits",
+    "P-n4k2-plain",
+    "P-n4k2-caps",
+    "P-n4k2-digits",
+    "P-n4k0-plain",
+    "P-n3k0-caps",
+    "P-n4k4-plain",
+    "P-n5k5-digits",
+    "P-n5k5-caps",
+    "P-n4k0-digits",
+    "P-n3k2-digits",
+    "P-n4k0-caps",
+    "P-n3k3-plain",
+    "P-n5k3-caps",
+    "P-n5k4-caps",
+    "P-n4k4-digits",
+    "P-n3k1-digits",
+    "P-n2k0-caps",
+    "P-n4k1-digits",
+    "P-n5k3-digits",
+    "P-n3k3-caps",
+    "P-n4k3-digits"
+  ],
+  "held": [
+    "P-n5k5-plain",
+    "P-n5k2-digits",
+    "P-n4k1-caps",
+    "P-n5k1-digits",
+    "P-n5k0-digits",
+    "P-n4k1-plain"
+  ],
+  "hidden": [
+    "P-n5k0-caps",
+    "P-n3k1-caps",
+    "P-n5k1-caps",
+    "P-n5k1-plain",
+    "P-n5k2-plain",
+    "P-n2k2-caps",
+    "P-n2k0-digits",
+    "P-n3k3-digits",
+    "P-n5k2-caps",
+    "P-n5k4-digits",
+    "P-n4k4-caps",
+    "P-n3k0-digits",
+    "P-n5k3-plain",
+    "P-n3k0-plain",
+    "P-n2k2-digits",
+    "P-n5k0-plain",
+    "P-n3k2-caps",
+    "P-n4k3-caps"
+  ],
+  "scenarios": [
+    {
+      "sid": "single_known:F01:P-n2k2-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F01"
+      ],
+      "target": {
+        "case_id": "P-n2k2-plain",
+        "input": {
+          "resume": "experienced developer with python and sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_known:F01:P-n4k4-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F01"
+      ],
+      "target": {
+        "case_id": "P-n4k4-plain",
+        "input": {
+          "resume": "experienced developer with python and sql and docker and java",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_known:F01:P-n4k3-digits",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F01"
+      ],
+      "target": {
+        "case_id": "P-n4k3-digits",
+        "input": {
+          "resume": "5 years experience with java and python and sql",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_known:F02:P-n2k1-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F02"
+      ],
+      "target": {
+        "case_id": "P-n2k1-plain",
+        "input": {
+          "resume": "experienced developer with sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_known:F02:P-n2k1-caps",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F02"
+      ],
+      "target": {
+        "case_id": "P-n2k1-caps",
+        "input": {
+          "resume": "Experienced Developer with SQL",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_known:F02:P-n2k1-digits",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F02"
+      ],
+      "target": {
+        "case_id": "P-n2k1-digits",
+        "input": {
+          "resume": "5 years experience with sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_known:F03:P-n2k1-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n2k1-plain",
+        "input": {
+          "resume": "experienced developer with sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "score"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_known:F03:P-n4k2-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n4k2-plain",
+        "input": {
+          "resume": "experienced developer with docker and java",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "score"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_known:F03:P-n4k2-digits",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n4k2-digits",
+        "input": {
+          "resume": "5 years experience with docker and java",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "score"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_known:F04:P-n3k2-plain",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F04"
+      ],
+      "target": {
+        "case_id": "P-n3k2-plain",
+        "input": {
+          "resume": "experienced developer with docker and python",
+          "required": [
+            "python",
+            "sql",
+            "docker"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "decide"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_known:F04:P-n4k2-caps",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F04"
+      ],
+      "target": {
+        "case_id": "P-n4k2-caps",
+        "input": {
+          "resume": "Experienced Developer with Docker and Java",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "decide"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_known:F04:P-n4k3-digits",
+      "kind": "single_known",
+      "faults": [
+        "TOY-F04"
+      ],
+      "target": {
+        "case_id": "P-n4k3-digits",
+        "input": {
+          "resume": "5 years experience with java and python and sql",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "decide"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_heldout:F05:P-n2k1-caps",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F05"
+      ],
+      "target": {
+        "case_id": "P-n2k1-caps",
+        "input": {
+          "resume": "Experienced Developer with SQL",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_heldout:F05:P-n5k3-caps",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F05"
+      ],
+      "target": {
+        "case_id": "P-n5k3-caps",
+        "input": {
+          "resume": "Experienced Developer with Java and AWS and Python",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java",
+            "aws"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_heldout:F05:P-n3k3-caps",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F05"
+      ],
+      "target": {
+        "case_id": "P-n3k3-caps",
+        "input": {
+          "resume": "Experienced Developer with Python and SQL and Docker",
+          "required": [
+            "python",
+            "sql",
+            "docker"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_heldout:F06:P-n5k4-plain",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F06"
+      ],
+      "target": {
+        "case_id": "P-n5k4-plain",
+        "input": {
+          "resume": "experienced developer with aws and python and sql and docker",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java",
+            "aws"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [
+        [
+          "RP5",
+          "RS-extract_skills"
+        ]
+      ],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_heldout:F06:P-n2k1-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F06"
+      ],
+      "target": {
+        "case_id": "P-n2k1-digits",
+        "input": {
+          "resume": "5 years experience with sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_heldout:F06:P-n5k3-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F06"
+      ],
+      "target": {
+        "case_id": "P-n5k3-digits",
+        "input": {
+          "resume": "5 years experience with java and aws and python",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java",
+            "aws"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [
+        [
+          "RP5",
+          "RS-extract_skills"
+        ]
+      ],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_heldout:F07:P-n2k1-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F07"
+      ],
+      "target": {
+        "case_id": "P-n2k1-digits",
+        "input": {
+          "resume": "5 years experience with sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_heldout:F07:P-n4k4-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F07"
+      ],
+      "target": {
+        "case_id": "P-n4k4-digits",
+        "input": {
+          "resume": "5 years experience with python and sql and docker and java",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "single_heldout:F07:P-n4k3-digits",
+      "kind": "single_heldout",
+      "faults": [
+        "TOY-F07"
+      ],
+      "target": {
+        "case_id": "P-n4k3-digits",
+        "input": {
+          "resume": "5 years experience with java and python and sql",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "conflict_trap:F03:P-n2k1-plain",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n2k1-plain",
+        "input": {
+          "resume": "experienced developer with sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "score"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "suite_ids": [
+        "P-n3k1-plain",
+        "P-n2k2-plain",
+        "P-n3k2-plain",
+        "P-n2k0-plain",
+        "P-n4k3-plain",
+        "P-n5k4-plain"
+      ]
+    },
+    {
+      "sid": "conflict_trap:F03:P-n2k1-caps",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n2k1-caps",
+        "input": {
+          "resume": "Experienced Developer with SQL",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "score"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "suite_ids": [
+        "P-n3k1-plain",
+        "P-n2k2-plain",
+        "P-n3k2-plain",
+        "P-n2k0-plain",
+        "P-n4k3-plain",
+        "P-n5k4-plain"
+      ]
+    },
+    {
+      "sid": "conflict_trap:F03:P-n2k1-digits",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n2k1-digits",
+        "input": {
+          "resume": "5 years experience with sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "score"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "suite_ids": [
+        "P-n3k1-plain",
+        "P-n2k2-plain",
+        "P-n3k2-plain",
+        "P-n2k0-plain",
+        "P-n4k3-plain",
+        "P-n5k4-plain"
+      ]
+    },
+    {
+      "sid": "conflict_trap:F03:P-n4k2-plain",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n4k2-plain",
+        "input": {
+          "resume": "experienced developer with docker and java",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "score"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "suite_ids": [
+        "P-n3k1-plain",
+        "P-n2k2-plain",
+        "P-n3k2-plain",
+        "P-n2k0-plain",
+        "P-n4k3-plain",
+        "P-n5k4-plain"
+      ]
+    },
+    {
+      "sid": "conflict_trap:F03:P-n4k2-caps",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n4k2-caps",
+        "input": {
+          "resume": "Experienced Developer with Docker and Java",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "score"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "suite_ids": [
+        "P-n3k1-plain",
+        "P-n2k2-plain",
+        "P-n3k2-plain",
+        "P-n2k0-plain",
+        "P-n4k3-plain",
+        "P-n5k4-plain"
+      ]
+    },
+    {
+      "sid": "conflict_trap:F03:P-n4k2-digits",
+      "kind": "conflict_trap",
+      "faults": [
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n4k2-digits",
+        "input": {
+          "resume": "5 years experience with docker and java",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "score"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [
+        [
+          "RP3",
+          "RP5"
+        ],
+        [
+          "RP5",
+          "RS-score"
+        ]
+      ],
+      "suite_ids": [
+        "P-n3k1-plain",
+        "P-n2k2-plain",
+        "P-n3k2-plain",
+        "P-n2k0-plain",
+        "P-n4k3-plain",
+        "P-n5k4-plain"
+      ]
+    },
+    {
+      "sid": "double_synergistic:F02+F03:P-n2k2-plain",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F02",
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n2k2-plain",
+        "input": {
+          "resume": "experienced developer with python and sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "expected_interaction_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "double_synergistic:F03+F06:P-n2k2-plain",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F03",
+        "TOY-F06"
+      ],
+      "target": {
+        "case_id": "P-n2k2-plain",
+        "input": {
+          "resume": "experienced developer with python and sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "expected_interaction_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "double_synergistic:F02+F03:P-n4k3-plain",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F02",
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n4k3-plain",
+        "input": {
+          "resume": "experienced developer with java and python and sql",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "expected_interaction_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "double_synergistic:F03+F06:P-n4k3-plain",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F03",
+        "TOY-F06"
+      ],
+      "target": {
+        "case_id": "P-n4k3-plain",
+        "input": {
+          "resume": "experienced developer with java and python and sql",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "expected_interaction_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "double_synergistic:F02+F03:P-n4k3-digits",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F02",
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n4k3-digits",
+        "input": {
+          "resume": "5 years experience with java and python and sql",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "expected_interaction_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "double_synergistic:F03+F06:P-n4k3-digits",
+      "kind": "double_synergistic",
+      "faults": [
+        "TOY-F03",
+        "TOY-F06"
+      ],
+      "target": {
+        "case_id": "P-n4k3-digits",
+        "input": {
+          "resume": "5 years experience with java and python and sql",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills",
+        "score"
+      ],
+      "expected_interaction_pairs": [
+        [
+          "extract_skills",
+          "score"
+        ]
+      ],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "double_independent:F01+F02:P-n2k1-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F01",
+        "TOY-F02"
+      ],
+      "target": {
+        "case_id": "P-n2k1-plain",
+        "input": {
+          "resume": "experienced developer with sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "double_independent:F01+F03:P-n2k1-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F01",
+        "TOY-F03"
+      ],
+      "target": {
+        "case_id": "P-n2k1-plain",
+        "input": {
+          "resume": "experienced developer with sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize",
+        "score"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "double_independent:F01+F04:P-n3k2-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F01",
+        "TOY-F04"
+      ],
+      "target": {
+        "case_id": "P-n3k2-plain",
+        "input": {
+          "resume": "experienced developer with docker and python",
+          "required": [
+            "python",
+            "sql",
+            "docker"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize",
+        "decide"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "double_independent:F01+F06:P-n5k4-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F01",
+        "TOY-F06"
+      ],
+      "target": {
+        "case_id": "P-n5k4-plain",
+        "input": {
+          "resume": "experienced developer with aws and python and sql and docker",
+          "required": [
+            "python",
+            "sql",
+            "docker",
+            "java",
+            "aws"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "double_independent:F02+F04:P-n2k1-plain",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F02",
+        "TOY-F04"
+      ],
+      "target": {
+        "case_id": "P-n2k1-plain",
+        "input": {
+          "resume": "experienced developer with sql",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "extract_skills",
+        "decide"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    },
+    {
+      "sid": "double_independent:F02+F05:P-n2k1-caps",
+      "kind": "double_independent",
+      "faults": [
+        "TOY-F02",
+        "TOY-F05"
+      ],
+      "target": {
+        "case_id": "P-n2k1-caps",
+        "input": {
+          "resume": "Experienced Developer with SQL",
+          "required": [
+            "python",
+            "sql"
+          ]
+        },
+        "expected": {
+          "decision": "match"
+        }
+      },
+      "truth_stages": [
+        "tokenize",
+        "extract_skills"
+      ],
+      "expected_interaction_pairs": [],
+      "oracle_conflicts": [],
+      "suite_ids": []
+    }
+  ]
+}
